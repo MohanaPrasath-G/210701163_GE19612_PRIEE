@@ -1,0 +1,26 @@
+const jwt = require('jsonwebtoken');
+
+const authenticateToken = (req, res, next) => {
+   console.log("hello from auth endpoint")
+
+    const token = req.header('Authorization')?.split(' ')[1];
+    
+    if (!token) {
+        console.log("error in auth")
+        return res.status(401).json({ message: 'Access denied, token missing!' });
+    }
+    
+    try {
+
+        const verified = jwt.verify(token, "softhand");
+        req.user = verified.data;
+        // console.log("token",verified)
+        // console.log("Middleware",req.user)
+    next();
+  } catch (error) {
+    console.log("error in auth 2")
+    res.status(400).json({ message: 'Invalid token' });
+  }
+};
+
+module.exports = authenticateToken;

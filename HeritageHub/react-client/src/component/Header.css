@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+    transition: all 0.5s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+header .logo {
+    color: rgb(230, 44, 42);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Akronim', cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: rgb(230, 44, 42);
+    font-weight: bolder;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo {
+    color: rgb(230, 44, 42);
+}
+
+header.sticky ul li a {
+    color: #000;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.user-menu span {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-menu li:hover {
+    background: rgb(230, 44, 42);
+}
+
+.dropdown-menu li:hover a {
+    color: #fff;
+}
+
+@media (max-width: 1190px) {
+
+    header,
+    header.sticky {
+        padding: 20px 50px;
+    }
+
+    header ul {
+        display: block;
+        padding: 100px 20px;
+        background-color: #fff;
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        z-index: 999;
+    }
+
+    header ul li {
+        margin: 20px 0;
+    }
+
+    header ul li a {
+        font-size: 24px;
+    }
+
+    header ul.active {
+        left: 0;
+    }
+
+    header .toggle {
+        width: 40px;
+        height: 40px;
+        background: url('../assets/menu.png') no-repeat center;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    header .toggle.active {
+        background: url('../assets/close.png') no-repeat center;
+        background-size: 25px;
+    }
+}
+
+@media (max-width: 440px) {
+    footer .sec {
+        margin-top: 1rem;
+    }
+
+    .sec.aboutus {
+        margin-bottom: 3em;
+    }
+
+    .sec p,
+    .sec h2 {
+        width: 250px;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,60 @@
+.post-description-container {
+    margin-top: 20px;
+}
+
+.post-banner {
+    position: relative;
+    min-height: 30vh;
+    background: url('../assets/bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.post-banner .textBx {
+    padding: 20px;
+}
+
+.post-banner h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.post-banner h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.post-details .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-image {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content {
+    max-width: 800px;
+    text-align: left;
+}
+
+.post-content p {
+    font-size: 1.1em;
+    line-height: 1.9em;
+}

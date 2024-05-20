@@ -1,0 +1,52 @@
+.upload-banner {
+    position: relative;
+    min-height: 50vh;
+    background: url('../assets/bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.upload-banner h2 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.upload-banner h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.upload-section .card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section .card .card-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.upload-section .card .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.upload-section .card .upload-btn {
+    background: rgb(230, 44, 42);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-section .card .upload-btn:hover {
+    background: rgb(200, 30, 30);
+}

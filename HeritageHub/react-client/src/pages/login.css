@@ -1,0 +1,92 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.custom-card {
+        /* background: url('../assets/bg.jpg') no-repeat; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(81, 37, 118, 0.1);
+    max-width: 500px;
+    /* Using the same color format */
+}
+
+.custom-card-body {
+    padding: 20px;
+}
+
+.custom-card-title {
+    color: rgb(230, 44, 42);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-form-label {
+    color: rgb(230, 44, 42);
+    font-weight: bold;
+}
+
+.custom-form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(230, 44, 42);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.log-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.log-btn:hover {
+    background-color: rgb(230, 44, 42);
+}
+
+.custom-link-text {
+    text-align: center;
+    color: rgb(230, 44, 42);
+}
+
+.custom-link {
+    color: rgb(230, 44, 42);
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+}
+.container-fluid.bg-img-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensures the container takes the full height of the viewport */
+    background-image: url('../assets/bg.jpg');
+    /* Add your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.card.custom-card {
+    width: 100%;
+    max-width: 400px;
+    /* Adjust the max-width to your desired size */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slight transparency for better readability */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.log-btn {
+    width: 100%;
+}

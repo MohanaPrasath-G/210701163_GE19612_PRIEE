@@ -1,0 +1,74 @@
+.post-banner {
+    position: relative;
+    min-height: 50vh;
+    background: url('../assets/bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.post-banner h2 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.post-banner h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.post-section .post-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.post-section .post-item img {
+    width: 100%;
+    height: 200px;
+    /* Fixed height for uniform size */
+    object-fit: cover;
+    /* Ensure images cover the area */
+    border-bottom: 1px solid #ccc;
+}
+
+.post-section .post-item .post-content {
+    padding: 20px;
+    max-height: 400px;
+    /* Fixed height for uniform size */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-section .post-item h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.post-section .post-item p {
+    font-size: 1em;
+    /* margin-bottom: 10px; */
+}
+
+.post-section .post-item .uploaded-by {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.post-section .post-item .readmore-link {
+    color: rgb(230, 44, 42);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-section .post-item .readmore-link:hover {
+    color: rgb(200, 30, 30);
+}

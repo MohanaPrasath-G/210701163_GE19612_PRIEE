@@ -1,0 +1,48 @@
+.upload-banner {
+    position: relative;
+    min-height: 50vh;
+    background: url('../assets/bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.upload-banner h2 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.upload-banner h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.upload-section .heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.upload-form .form-group {
+    margin-bottom: 20px;
+}
+
+.upload-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: rgb(230, 44, 42);
+}
+
+.upload-form .btn-upload {
+    background: rgb(230, 44, 42);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.upload-form .btn-upload:hover {
+    background: rgb(200, 20, 20);
+}

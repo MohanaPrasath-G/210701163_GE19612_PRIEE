@@ -1,0 +1,61 @@
+.gallery-banner {
+    position: relative;
+    min-height: 50vh;
+    background: url('../assets/bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.gallery-banner h2 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.gallery-banner h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.gallery-section .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    transition: transform 0.3s ease;
+    height: 300px;
+    /* Fixed height for uniform size */
+}
+
+.gallery-section .gallery-item img {
+    width: 100%;
+    height: 100%;
+    /* Ensure the image covers the entire item */
+    object-fit: cover;
+}
+
+.gallery-section .gallery-item .gallery-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-section .gallery-item:hover .gallery-content {
+    opacity: 1;
+}
+
+.gallery-section .gallery-item h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0;
+}
